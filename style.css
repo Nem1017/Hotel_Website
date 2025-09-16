@@ -1,0 +1,105 @@
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #fff;
+    }
+    .navbar-dark {
+      background: #0d1b2a !important;
+    }
+    .hero-section {
+      background: url('assets/hotel-main.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .price-tag {
+      background: #f7a11b;
+      color: #fff;
+      padding: 5px 10px;
+      font-weight: bold;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      border-radius: 5px;
+    }
+    .room-card img {
+      height: 220px;
+      object-fit: cover;
+    }
+    .navbar-dark .nav-link:hover {
+      color: rgb(199, 186, 12);
+      margin: 0 10px;
+    }
+    .footer-darkblue {
+    background-color: #0d1b2a !important; 
+    }
+    body {
+        background: #ffffff; /* White background */
+        color: #000000; /* Black text */
+    }
+
+    /* Loader styling */
+    #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0d1b2a; /* Same dark blue background */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        opacity: 1;
+        transition: opacity 0.5s ease; /* Fade out */
+    }
+
+    /* Hide loader after load */
+    body.loaded #loader {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Make spinner bigger */
+    .spinner-border {
+        width: 5rem;
+        height: 5rem;
+        border-width: 0.5rem;
+    }
+    .booking-section {
+        margin-top: -50px; 
+        position: relative;
+        z-index: 10;
+    }
+    .booking-section .form-control,
+    .booking-section .form-select {
+        border: 1px solid #f0ad4e; /* Gold border */
+        border-radius: 8px;
+    }
+
+    .booking-section .btn-warning:hover {
+        background-color: #090870; /* Dark blue button */
+        color: gold;
+        border: none;
+    }
+    .bg-darkblue {
+        background-color: darkblue !important;
+    }
+
